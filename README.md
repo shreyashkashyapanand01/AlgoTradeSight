@@ -14,6 +14,35 @@
 ---
 
 
+
+
+------------------------------------------------------------
+
+## 🔗 Project Repositories
+
+- 🤖 **AI Engine (Python + LangGraph)**  
+  https://github.com/shreyashkashyapanand01/migrating_Stock_AI_Engine
+
+- ⚙️ **Backend API (Spring Boot)**  
+  https://github.com/shreyashkashyapanand01/AI_Trading_BACKEND
+
+- 🎨 **Frontend (React 19)**  
+  https://github.com/shreyashkashyapanand01/AI_Trading_UI
+
+---
+
+## 📌 Note on Repository Structure
+
+AlgoTradeSight was originally developed as a **distributed system across three separate repositories** — one for the AI Engine, one for the Backend API, and one for the Frontend UI. This separation was intentionally designed to follow **real-world software engineering practices**, enabling independent development, scalability, and a clear separation of concerns.
+
+This repository serves as a **centralized project hub**, created specifically to provide a **unified overview of the entire system**. It consolidates all components in one place to make it easier for reviewers, recruiters, and collaborators to understand the complete architecture, system flow, and integration between services without navigating multiple repositories individually.
+
+By combining the documentation here, the project becomes more **accessible, well-structured, and resume-friendly**, while the actual implementation remains modular and maintained in their respective repositories.
+
+------------------------------------------------------------
+
+
+
 ## 🚀 Overview
 
 **AlgoTradeSight** is a full-stack, AI-powered stock trading intelligence platform built for retail investors in the Indian equity market. It combines a **multi-agent AI engine** (powered by LangGraph + Groq/Gemini LLMs) with a **Spring Boot API gateway** and a **React 19 dashboard** to deliver real-time stock analysis, autonomous market scanning, trade behavior coaching, and portfolio health assessment.
@@ -245,8 +274,8 @@ pip install uv
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/your-username/algotrade-sight.git
-cd algotrade-sight
+git clone https://github.com/shreyashkashyapanand01/AlgoTradeSight.git
+cd AlgoTradeSight
 ```
 
 ---
