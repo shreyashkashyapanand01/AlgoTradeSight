@@ -13,6 +13,138 @@
 
 ---
 
+# AlgoTradeSight — AI Trading Coach & Portfolio Optimizer
+
+<p align="center">
+  <img src="https://img.shields.io/badge/System-Distributed%20Architecture-black?style=flat-square" />
+  <img src="https://img.shields.io/badge/AI-Multi--Agent-purple?style=flat-square" />
+  <img src="https://img.shields.io/badge/Backend-Spring%20Boot-brightgreen?style=flat-square" />
+  <img src="https://img.shields.io/badge/Frontend-React-61DAFB?style=flat-square" />
+</p>
+
+---
+
+## 🚀 Overview
+
+**AlgoTradeSight** is a **distributed, AI-powered stock trading intelligence system** designed for retail investors in the Indian equity market.
+
+> Designed as a **microservice-style architecture**, where AI processing, backend orchestration, and frontend UI are **independently developed and deployable systems**.
+
+It combines:
+- A **multi-agent AI engine** for decision intelligence  
+- A **Spring Boot backend** for API orchestration  
+- A **React dashboard** for real-time user interaction  
+
+---
+
+## 🔗 Project Components
+
+This system is split into **independent repositories**:
+
+- 🤖 **AI Engine (Python + LangGraph)**  
+  👉 https://github.com/shreyashkashyapanand01/migrating_Stock_AI_Engine
+
+- ⚙️ **Backend API Gateway (Spring Boot)**  
+  👉 https://github.com/shreyashkashyapanand01/AI_Trading_BACKEND
+
+- 🎨 **Frontend Dashboard (React 19)**  
+  👉 https://github.com/shreyashkashyapanand01/AI_Trading_UI
+
+---
+
+## 🏗 System Architecture
+
+
+User (Browser)
+↓
+React Frontend (Port 5173)
+↓
+Spring Boot Backend (Port 8080)
+↓
+Python AI Engine (Port 8000)
+↓
+LLMs + Market APIs + Redis Cache
+
+
+### 🔄 Data Flow
+
+1. User interacts with the React dashboard  
+2. Frontend sends request to Spring Boot backend  
+3. Backend routes request to Python AI Engine  
+4. AI Engine executes multi-agent pipelines (LangGraph)  
+5. Results are returned → displayed in UI  
+
+---
+
+## 🧠 Core Capabilities
+
+- **Multi-Agent AI Decision System**  
+  Technical + Fundamental + News agents collaborate → final decision
+
+- **Quantitative Scoring Layer**  
+  Weighted system:
+  - Technical (40%)
+  - Fundamental (40%)
+  - News Sentiment (20%)
+
+- **Autonomous Market Scanner**  
+  AI scans NSE stocks → ranks opportunities
+
+- **Trade Behavior Coach**  
+  Detects:
+  - Overtrading
+  - Revenge trading
+  - Risk mismanagement  
+
+- **Portfolio Health Engine**  
+  Calculates:
+  - Sharpe Ratio
+  - Beta
+  - Volatility  
+  + stress testing + rebalancing suggestions  
+
+---
+
+## 🧩 Why Separate Repositories?
+
+This system follows **real-world scalable architecture principles**:
+
+- Independent deployment of AI, backend, frontend  
+- Enables parallel development  
+- Improves maintainability  
+- Microservice-ready design  
+- Easier scaling of AI workloads separately  
+
+---
+
+## ⚙️ How to Run the System
+
+You need to run all 3 components:
+
+### 1️⃣ Start AI Engine
+```bash
+cd migrating_Stock_AI_Engine
+uv run uvicorn app.main:app --reload
+2️⃣ Start Backend
+cd AI_Trading_BACKEND
+./mvnw spring-boot:run
+3️⃣ Start Frontend
+cd AI_Trading_UI
+npm install
+npm run dev
+📊 Example Workflow
+User enters stock (e.g., TCS)
+   ↓
+Frontend → Backend API
+   ↓
+Backend → AI Engine
+   ↓
+AI Agents analyze signals
+   ↓
+Final decision returned
+   ↓
+UI displays insights + charts
+
 ## 🚀 Overview
 
 **AlgoTradeSight** is a full-stack, AI-powered stock trading intelligence platform built for retail investors in the Indian equity market. It combines a **multi-agent AI engine** (powered by LangGraph + Groq/Gemini LLMs) with a **Spring Boot API gateway** and a **React 19 dashboard** to deliver real-time stock analysis, autonomous market scanning, trade behavior coaching, and portfolio health assessment.
