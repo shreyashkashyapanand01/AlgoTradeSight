@@ -72,6 +72,38 @@ Retail investors lack access to institutional-grade tools that simultaneously ev
 
 ---
 
+## 🗺️ Agentic Workflow Diagrams
+
+Each feature is powered by a dedicated **LangGraph agentic pipeline**. Below are the end-to-end workflows showing how agents, tools, and decision nodes are orchestrated for each capability.
+
+### 🔍 Stock Analysis Workflow
+> Parallel fan-out across Technical, News, and Fundamental agents → quantitative scoring → LLM advisory decision.
+
+![Stock Analysis Agentic Workflow](images/new_agentic_stock_workflow.svg)
+
+---
+
+### 📡 Market Scanner Workflow
+> Autonomous universe fetch from NSE → full AI analysis per candidate → rule-based scoring → ranked opportunity list.
+
+![Market Scanner Agentic Workflow](images/new_agentic_scan_workflow.svg)
+
+---
+
+### 🧘 Trade Behavior Coach Workflow
+> Quantitative metrics calculation → behavioral pattern detection → AI trading psychologist coaching agent.
+
+![Trade Analysis Agentic Workflow](images/new_agentic_trade_workflow.svg)
+
+---
+
+### 💼 Portfolio Health Engine Workflow
+> Metrics → Diversification → Stress Test → Concurrent Sentiment (ThreadPoolExecutor) → AI Portfolio Advisor → Finalizer.
+
+![Portfolio Analysis Agentic Workflow](images/new_agentic_portfolio_workflow.svg)
+
+---
+
 ## 🛠 Tech Stack
 
 ### Languages
