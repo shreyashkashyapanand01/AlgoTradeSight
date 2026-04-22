@@ -18,22 +18,9 @@
 
 ------------------------------------------------------------
 
-## 🔗 Project Repositories
-
-- 🤖 **AI Engine (Python + LangGraph)**  
-  https://github.com/shreyashkashyapanand01/migrating_Stock_AI_Engine
-
-- ⚙️ **Backend API (Spring Boot)**  
-  https://github.com/shreyashkashyapanand01/AI_Trading_BACKEND
-
-- 🎨 **Frontend (React 19)**  
-  https://github.com/shreyashkashyapanand01/AI_Trading_UI
-
----
-
 ## 📌 Note on Repository Structure
 
-AlgoTradeSight was originally developed as a **distributed system across three separate repositories** — one for the AI Engine, one for the Backend API, and one for the Frontend UI. This separation was intentionally designed to follow **real-world software engineering practices**, enabling independent development, scalability, and a clear separation of concerns.
+AlgoTradeSight was originally developed as a **distributed system across three separate repositories** — one for the **AI Engine**, one for the **Backend API**, and one for the **Frontend UI**. This separation was intentionally designed to follow **real-world software engineering practices**, enabling independent development, scalability, and a clear separation of concerns.
 
 This repository serves as a **centralized project hub**, created specifically to provide a **unified overview of the entire system**. It consolidates all components in one place to make it easier for reviewers, recruiters, and collaborators to understand the complete architecture, system flow, and integration between services without navigating multiple repositories individually.
 
