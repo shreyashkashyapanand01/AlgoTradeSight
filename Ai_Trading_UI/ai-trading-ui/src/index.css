@@ -1,0 +1,92 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: 'Inter', system-ui, sans-serif;
+  --color-brand-50: #f5f3ff;
+  --color-brand-100: #ede9fe;
+  --color-brand-200: #ddd6fe;
+  --color-brand-300: #c4b5fd;
+  --color-brand-400: #a78bfa;
+  --color-brand-500: #8b5cf6;
+  --color-brand-600: #7c3aed;
+  --color-brand-700: #6d28d9;
+  --color-brand-800: #5b21b6;
+  --color-brand-900: #4c1d95;
+  --color-brand-950: #2e1065;
+  
+  --color-success-400: #4ade80;
+  --color-success-500: #22c55e;
+  --color-danger-400: #f87171;
+  --color-danger-500: #ef4444;
+
+  --color-surface-50: #ffffff;
+  --color-surface-100: #f8fafc;
+  --color-surface-200: #f1f5f9;
+  --color-surface-300: #e2e8f0;
+  --color-surface-800: #1e293b;
+  --color-surface-900: #0f172a;
+  --color-surface-950: #020617;
+}
+
+@layer base {
+  body {
+    @apply bg-surface-950 text-surface-50 font-sans antialiased selection:bg-brand-500/30;
+  }
+}
+
+@layer utilities {
+  .glass-panel {
+    @apply bg-surface-900/60 backdrop-blur-xl border border-surface-800/50 shadow-xl;
+  }
+  
+  .glass-card {
+    @apply bg-surface-800/40 backdrop-blur-md border border-surface-800/50 rounded-2xl transition-all duration-300 hover:border-surface-800/80 hover:bg-surface-800/60;
+  }
+
+  .text-gradient {
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-brand-400 to-indigo-400;
+  }
+  
+  .text-gradient-success {
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-success-400 to-emerald-400;
+  }
+
+  .text-gradient-danger {
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-danger-400 to-rose-400;
+  }
+  
+  .glow {
+    box-shadow: 0 0 40px -10px theme('colors.brand.500');
+  }
+
+  /* Custom scrollbar */
+  ::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+  }
+  ::-webkit-scrollbar-track {
+    @apply bg-transparent;
+  }
+  ::-webkit-scrollbar-thumb {
+    @apply bg-surface-800 rounded-full hover:bg-surface-800/80 transition-colors;
+  }
+}
+
+/* Base animations */
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-5px); }
+}
+
+@keyframes pulse-glow {
+  0%, 100% { opacity: 0.5; box-shadow: 0 0 20px -10px theme('colors.brand.500'); }
+  50% { opacity: 1; box-shadow: 0 0 30px -5px theme('colors.brand.500'); }
+}
+
+.animate-float {
+  animation: float 3s ease-in-out infinite;
+}
+
+.animate-pulse-glow {
+  animation: pulse-glow 2s ease-in-out infinite;
+}
