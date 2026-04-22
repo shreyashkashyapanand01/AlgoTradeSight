@@ -39,6 +39,20 @@ This repository serves as a **centralized project hub**, created specifically to
 
 By combining the documentation here, the project becomes more **accessible, well-structured, and resume-friendly**, while the actual implementation remains modular and maintained in their respective repositories.
 
+---
+## 🔗 Project Repositories
+
+- 🤖 **AI Engine (Python + LangGraph)**  
+  https://github.com/shreyashkashyapanand01/migrating_Stock_AI_Engine
+
+- ⚙️ **Backend API (Spring Boot)**  
+  https://github.com/shreyashkashyapanand01/AI_Trading_BACKEND
+
+- 🎨 **Frontend (React 19)**  
+  https://github.com/shreyashkashyapanand01/AI_Trading_UI
+
+---
+
 ------------------------------------------------------------
 
 
